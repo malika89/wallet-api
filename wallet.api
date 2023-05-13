@@ -1,0 +1,53 @@
+syntax = "v1"
+
+info (
+	title: "tg 钱包"
+	
+)
+
+type (
+	GetUserBalanceRequest {
+		UserId int64 `path:"userId"`
+	}
+
+	GetUserBalanceResponse {
+		Balance float64 `json:"balance"`
+	}
+)
+
+type (
+    WithdrawReq struct {
+	    Address string `json:"address"`
+	    Amount float64 `json:"amount"`
+    }
+
+   WithdrawResp struct {
+	    TxHash string `json:"tx_hash"`
+    }
+)
+
+type (
+    DepositReq  struct{
+	    Address string `json:"address"`
+	    Amount float64 `json:"amount"`
+    }
+
+    DepositResp struct {
+	    TxHash string `json:"tx_hash"`
+    }
+)
+
+service wallet-api {
+	@doc "获取余额"
+	@handler GetBalance
+	get /wallet/balance/:userId (GetUserBalanceRequest) returns (GetUserBalanceResponse)
+
+	@doc "充值"
+	@handler Deposit
+	post /wallet/deposit (DepositReq) returns (DepositResp)
+
+	@doc "提现"
+	@handler WithDraw
+	post /wallet/withdraw (WithdrawReq) returns (WithdrawResp)
+}
+
