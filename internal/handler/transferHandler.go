@@ -2,13 +2,13 @@ package handler
 
 import (
 	"context"
+	"github.com/malika89/wallet-api/client"
 	"net/http"
-	"wallet-api/client"
 
 	"github.com/zeromicro/go-zero/rest/httpx"
 
-	"wallet-api/internal/logic"
-	"wallet-api/internal/svc"
+	"github.com/malika89/wallet-api/internal/logic"
+	"github.com/malika89/wallet-api/internal/svc"
 )
 
 func TransferHandler(ctx *svc.ServiceContext) http.HandlerFunc {

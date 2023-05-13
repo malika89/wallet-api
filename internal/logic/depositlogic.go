@@ -2,9 +2,9 @@ package logic
 
 import (
 	"context"
+	"github.com/malika89/wallet-api/internal"
+	"github.com/malika89/wallet-api/internal/svc"
 	"github.com/zeromicro/go-zero/core/logx"
-	"wallet-api/internal"
-	"wallet-api/internal/svc"
 )
 
 type DepositLogic struct {

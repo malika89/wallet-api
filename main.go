@@ -3,18 +3,18 @@ package main
 import (
 	"flag"
 	"fmt"
+	"github.com/malika89/wallet-api/proto"
 	"github.com/zeromicro/go-zero/core/service"
 	"github.com/zeromicro/go-zero/rest"
 	"github.com/zeromicro/go-zero/zrpc"
 	"github.com/zeromicro/zero-contrib/zrpc/registry/consul"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/reflection"
-	"wallet-api/proto"
 
+	"github.com/malika89/wallet-api/internal/config"
+	"github.com/malika89/wallet-api/internal/server"
+	"github.com/malika89/wallet-api/internal/svc"
 	"github.com/zeromicro/go-zero/core/conf"
-	"wallet-api/internal/config"
-	"wallet-api/internal/server"
-	"wallet-api/internal/svc"
 )
 
 var configFile = flag.String("f", "etc/wallet.yaml", "the config file")

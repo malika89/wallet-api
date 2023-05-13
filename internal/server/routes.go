@@ -1,10 +1,10 @@
 package server
 
 import (
+	serviceHandler "github.com/malika89/wallet-api/internal/handler"
+	"github.com/malika89/wallet-api/internal/svc"
 	"github.com/zeromicro/go-zero/rest"
 	"net/http"
-	serviceHandler "wallet-api/internal/handler"
-	"wallet-api/internal/svc"
 )
 
 func RegisterHandlers(server *rest.Server, serverCtx *svc.ServiceContext) {

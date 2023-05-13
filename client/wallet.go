@@ -5,9 +5,9 @@ package client
 
 import (
 	"context"
+	"github.com/malika89/wallet-api/proto"
 	"github.com/zeromicro/go-zero/zrpc"
 	"google.golang.org/grpc"
-	"wallet-api/proto"
 )
 
 type (

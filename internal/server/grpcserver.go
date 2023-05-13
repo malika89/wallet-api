@@ -2,10 +2,10 @@ package server
 
 import (
 	"context"
-	"wallet-api/client"
-	"wallet-api/internal/logic"
-	"wallet-api/internal/svc"
-	"wallet-api/proto"
+	"github.com/malika89/wallet-api/client"
+	"github.com/malika89/wallet-api/internal/logic"
+	"github.com/malika89/wallet-api/internal/svc"
+	"github.com/malika89/wallet-api/proto"
 )
 
 type WalletServer struct {

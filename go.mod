@@ -1,4 +1,4 @@
-module wallet-api
+module github.com/malika89/wallet-api
 
 go 1.18
 
