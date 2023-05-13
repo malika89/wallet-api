@@ -1,8 +1,8 @@
 package svc
 
 import (
-	"wallet-api/client"
-	"wallet-api/internal/config"
+	"github.com/malika89/wallet-api/client"
+	"github.com/malika89/wallet-api/internal/config"
 )
 
 type ServiceContext struct {

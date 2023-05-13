@@ -2,10 +2,10 @@ package logic
 
 import (
 	"context"
-	"wallet-api/client"
+	"github.com/malika89/wallet-api/client"
 
+	"github.com/malika89/wallet-api/internal/svc"
 	"github.com/zeromicro/go-zero/core/logx"
-	"wallet-api/internal/svc"
 )
 
 type TransferLogic struct {
